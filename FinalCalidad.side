@@ -1,0 +1,161 @@
+{
+  "id": "ad585ae5-b70d-4960-866a-db1b9a7aa573",
+  "version": "2.0",
+  "name": "final_calidad",
+  "url": "https://localhost:7023",
+  "tests": [{
+    "id": "8f099fd0-e16b-4fe4-a148-44be17c05e9d",
+    "name": "Ingresar Privacy",
+    "commands": [{
+      "id": "ee405911-eb9f-4b0e-b06e-8762d8bbf7a5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59452c84-944f-43f5-b5b7-f084974bbf28",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc597aab-362b-4f10-acfd-97dc26d60844",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Privacy",
+      "targets": [
+        ["linkText=Privacy", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Privacy')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Home/Privacy')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Privacy')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b31ea42-1e1d-4f3e-8dce-dedc539ca39c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p",
+      "targets": [
+        ["css=p", "css:finder"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": "Use this page to detail your site's privacy policy."
+    }, {
+      "id": "4fc49a07-11e5-472f-940b-6741d89f6fb6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "87f3ea8d-44b4-49af-a019-47f1c3fc64e2",
+    "name": "index generar",
+    "commands": [{
+      "id": "67d31624-dbdc-4a5e-a8de-c53ef86fe724",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da240820-9fad-4d7c-9b9a-bda5edce6976",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a1329d9-7164-460c-a083-2623e0e3219b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Generar Jugada')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c5edf85-6c17-45e6-b656-fb545cd5a8e8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=th",
+      "targets": [
+        ["css=th", "css:finder"],
+        ["xpath=//th", "xpath:position"],
+        ["xpath=//th[contains(.,'Cartas')]", "xpath:innerText"]
+      ],
+      "value": "Cartas"
+    }, {
+      "id": "9c549f92-498b-4ede-a837-9c1d7c0f3b66",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "17ae5d4d-b121-469a-a0d5-534c66b41753",
+    "name": "boton privacy",
+    "commands": [{
+      "id": "874330ef-b1f2-4186-9540-ede949e98e30",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64acad55-5765-4213-9910-bcee39eb1924",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "985x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8e572c8-1fb0-4a0e-a3c9-c1da34c0eb6f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container > a",
+      "targets": [
+        ["css=.container > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Privacy')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/Home/Privacy')])[2]", "xpath:href"],
+        ["xpath=//footer/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ad1357b-7bff-4cf4-8e03-ac4a80fd96ed",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Privacy Policy')]", "xpath:innerText"]
+      ],
+      "value": "Privacy Policy"
+    }, {
+      "id": "160209bb-c38e-4112-8179-430fa573dfef",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d6abbef3-5f48-4768-82c3-02e71d0edc2b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://localhost:7023/"],
+  "plugins": []
+}
